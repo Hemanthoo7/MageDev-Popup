@@ -3,10 +3,11 @@
 namespace MageDev\Popup\Model;
 
 use MageDev\Popup\Api\Data\PopupInterface;
+use Magento\Framework\Api\CustomAttributesDataInterface;
 use Magento\Framework\Model\AbstractModel;
 use MageDev\Popup\Model\ResourceModel\Popup as PopupResource;
 
-class Popup extends AbstractModel implements PopupInterface
+class Popup extends AbstractModel implements PopupInterface, CustomAttributesDataInterface
 {
     private const POPUP_ID = 'popup_id';
     private const NAME = 'name';
@@ -82,6 +83,25 @@ class Popup extends AbstractModel implements PopupInterface
         $this->setData(self::IS_ACTIVE, $isActive);
     }
 
+    public function getCustomAttribute($attributeCode)
+    {
+        return[];
+    }
+
+    public function setCustomAttribute($attributeCode, $attributeValue)
+    {
+        // TODO: Implement setCustomAttribute() method.
+    }
+
+    public function getCustomAttributes()
+    {
+        return[];
+    }
+
+    public function setCustomAttributes(array $attributes)
+    {
+        // TODO: Implement setCustomAttributes() method.
+    }
 }
 
 

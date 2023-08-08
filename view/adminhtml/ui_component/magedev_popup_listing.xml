@@ -146,7 +146,7 @@
         </column>
         <column name="is_active" component="Magento_Ui/js/grid/columns/select">
             <settings>
-                <options class="MageDev\Popup\Ui\Source\Listing\IsActive"/>
+<!--                <options class="MageDev\Popup\Ui\Source\Listing\IsActive"/>-->
                 <filter>select</filter>
                 <editor>
                     <editorType>select</editorType>
@@ -169,12 +169,12 @@
                 <label translate="true">Modified</label>
             </settings>
         </column>
-        <actionsColumn name="actions" class="<MagDev\Popup\Ui\Component\Listing\Column\PopupActions">
-            <settings>
-                <indexField>popup_id</indexField>
-                <resizeEnabled>false</resizeEnabled>
-                <resizeDefaultWidth>107</resizeDefaultWidth>
-            </settings>
-        </actionsColumn>
+<!--        <actionsColumn name="actions" class="MagDev\Popup\Ui\Component\Listing\Column\PopupActions">-->
+<!--            <settings>-->
+<!--                <indexField>popup_id</indexField>-->
+<!--                <resizeEnabled>false</resizeEnabled>-->
+<!--                <resizeDefaultWidth>107</resizeDefaultWidth>-->
+<!--            </settings>-->
+<!--        </actionsColumn>-->
     </columns>
 </listing>
